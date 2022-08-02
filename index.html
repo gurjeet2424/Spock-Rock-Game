@@ -1,0 +1,46 @@
+<!--Document type HTML-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel = "shortcut icon" type = "image/png" href = "game.png">
+    <script src="https://kit.fontawesome.com/fce535b790.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Game Container-->
+    <div class="game-container">
+        <div class="header">
+            <h1>Roack Paper Scissor Lizard Spock </h1>
+        </div>
+        <!--Player Container-->
+        <div class="player-container" id="player">
+            <h2>You -- <span id="player-score">0</span><span class="choice" id="player-choice"></span></h2>
+            <i class="fa-solid fa-hand-back-fist" title = "Rock" id="playerRock" onclick="select('rock')"></i>
+            <i class="fa-solid fa-hand" title="Paper" id="playerPaper"onclick="select('paper')"></i>
+            <i class="fa-solid fa-hand-scissors" title="Scissor" id="playerScissor"onclick="select('scissor')"></i>
+            <i class="fa-solid fa-hand-lizard" title="Lizard" id="playerLizard"onclick="select('lizard')"></i>
+            <i class="fa-solid fa-hand-spock" title = "Spock" id="playerSpock"onclick="select('spock')"></i>
+        </div>
+        <!--Computer Container-->
+        <div class="player-container" id="computer">
+            <h2>You -  <span id="computer-score">0</span><span class="computerchoice" id="computer-choice"></span></h2>
+            <i class="fa-solid fa-hand-back-fist" title = "Rock" id="computerRock"></i>
+            <i class="fa-solid fa-hand" title="Paper" id="computerPaper"></i>
+            <i class="fa-solid fa-hand-scissors" title="Scissor" id="computerScissor"></i>
+            <i class="fa-solid fa-hand-lizard" title="Lizard" id="computerLizard"></i>
+            <i class="fa-solid fa-hand-spock" title = "Spock" id="computerSpock"></i>
+        </div>
+        <div class="reset">
+            <i class="fa-solid fa-rotate" title="Reset" id="reset" onclick="resetAll()"></i>
+        </div>
+        <div class="result-container">
+            <h3 class = "result-text" id = "result-text">You Won!</h3>
+        </div>
+    </div>
+
+    <script src = "script.js" type = "module"></script>
+</body>
+</html>
